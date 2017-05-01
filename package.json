@@ -10,7 +10,7 @@
     "dev": "nodemon server.js",
     "lint:css": "standard server.js",
     "lint": "run-s lint:*",
-    "redeploy:create": "heroku create normanwi-khxn-8th0o-1eurjy-",
+    "redeploy:create": "heroku create normanwi-khxn-8th0o-1eurjy",
     "redeploy:message": "echo \"Done, just run Deploy!\"",
     "redeploy": "run-s redeploy:*",
     "deploy": "git push heroku master"
