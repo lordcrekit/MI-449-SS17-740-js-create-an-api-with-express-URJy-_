@@ -7,6 +7,11 @@ var DATA = {}
 DATA[makeid()] = { task: 'finish this api', done: false }
 DATA[makeid()] = { task: 'test id randomness', done: false }
 
+// homepage
+app.get('/', function (req, res, next) {
+    res.send('Welcome! Go to /todos for the api')
+})
+
 // get all todos 
 app.get('/todos', function (req, res, next) {
   res.json(DATA)
