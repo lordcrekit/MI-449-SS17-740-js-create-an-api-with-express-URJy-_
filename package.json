@@ -13,7 +13,8 @@
     "redeploy:create": "heroku create normanwi-khxn-8th0o-1eurjy",
     "redeploy:message": "echo \"Done, just run Deploy!\"",
     "redeploy": "run-s redeploy:*",
-    "deploy": "git push heroku master"
+    "deploy:push": "git push heroku master",
+    "deploy": "run-s lint deploy:*"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
