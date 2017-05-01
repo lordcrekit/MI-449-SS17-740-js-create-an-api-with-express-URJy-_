@@ -1,0 +1,23 @@
+{
+  "name": "MI-449-SS17-740-js-create-an-api-with-express-URJy-_",
+  "version": "1.0.0",
+  "description": "School project, TODOlist api.",
+  "main": "server.js",
+  "repository": "https://github.com/lordcrekit/MI-449-SS17-740-js-create-an-api-with-express-URJy-_.git",
+  "author": "William Norman <lordcrekit@gmail.com>",
+  "license": "GNU-3.0",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "lint:css": "standard server.js",
+    "lint": "run-s lint:*"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "standard": "^10.0.2"
+  }
+}
