@@ -40,7 +40,7 @@ app.put('/todos/:id', function (req, res, next) {
   if (!found) { res.status(404).end(req.params.id + ' not found'); return }
   if (req.body.task) { found.task = req.body.task }
   if (undefined !== req.body.done) { found.done = req.body.done }
-  res.redirect('/todos')
+  res.redirect('/todos/' + req.params.id)
 })
 
 // delete todo
