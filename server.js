@@ -27,11 +27,12 @@ app.get('/todos/:id', function (req, res, next) {
 // add new todo
 app.post('/todos', function (req, res, next) {
   if (!req.body.task) { res.status(400).end('must enter task!'); return }
-  DATA[makeid()] = {
+  let id = makeid()
+  DATA[id] = {
     'task': req.body.task,
     'done': req.body.done || false
   }
-  res.redirect('/todos')
+  res.redirect('/todos/' + id)
 })
 
 // update todo
